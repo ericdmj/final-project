@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+         <!--you can also place internal styles here;
+             place these within <style> tags-->
+        
+    </head>
+
+    <body>
+        <!--put your initial page content here-->
+        <div class="top-content">
+            <div class="toptitle"><h1>The Richmond Election Comparator</h1></div>
+            <div class="about"><a href="#openModal"><button class="aboutbutton">About</button></a></div>
+        </div>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <p style="color:white">Welcome to the <strong>Richmond Election Comparator</strong>!</p>
+                <p style="color:white">The Comparator is a tool to help you explore how small areas of Richmond, Virginia, have changed politically over time. By taking a <em>precinct-level</em> look at the change in voting patterns from year to year, you get a much more granular look than if you just see a report about voting outcomes in "the city."</p>
+                <p style="color: white">There is also a Context View, which will let you get a little bit more background about the vote each year. All the data is about presidential elections, since that is a consistent data set across precincts, whereas local and state races have much more variety.</p>
+                <p style="color: white">Please note that there are situations where there is no data, primarily due to additions and subtractions of precincts over the years. This precinct map is based on that in use for the 2020 presidential election.</p>
+                <p></p>
+                <p style="color: white; font-size: 12px;"><em>Created by Eric Johnson, University of Wisconsin-Madison, August 2024.</em></p>
+            </div>
+        </div>
+        <div class="svg-container">
+            <div class="menuelements">
+                <p id="view">Context View</p>
+                <h3>Compare Vote Change</h3>
+                <p id="subtitle">Presidential election results by precinct</p>
+                <i class='fas fa-republican'></i> <i class='fas fa-democrat'></i>
+                <p id="instructions">Examine some context by election and precinct:</p>
+                <!-- <select id="dropdown1" class="dropdownstyle">
+                    <option value="">From:</option>
+                    <option value="1996">1996</option>
+                    <option value="2000">2000</option>
+                    <option value="2004">2004</option>
+                    <option value="2008">2008</option>
+                    <option value="2012">2012</option>
+                    <option value="2016">2016</option>
+                    <option value="2020">2020</option>
+                </select>
+                
+                <select id="dropdown2" class="dropdownstyle">
+                    <option value="">To:</option>
+                    <option value="1996">1996</option>
+                    <option value="2000">2000</option>
+                    <option value="2004">2004</option>
+                    <option value="2008">2008</option>
+                    <option value="2012">2012</option>
+                    <option value="2016">2016</option>
+                    <option value="2020">2020</option>
+                </select>
+                <p><button id="updateButton">Update Map&nbsp;&nbsp;<i class='fas fa-vote-yea'></i></button></p> -->
+                <div class="toggle2">
+                    <a href="index.html">Switch to<br>Comparator View</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+
+    <p style="color:white">This is a sample modal box that can be created using the powers of CSS3.</p>
+
+  </div>
+</div>
+        <!--you can also use this space for internal scripts;
+        place these within <script> tags-->
+
+        <!--put your external script links here-->
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.9.0/d3.min.js"></script>
+        <script type="text/javascript" src="js/context.js"></script>
+        <script type="text/javascript" src="lib/topojson/topojson.js"></script>
+        <script src="https://unpkg.com/simple-statistics@7.8.3/dist/simple-statistics.min.js"></script>
+        <script src="https://unpkg.com/d3-arrow@0.0.25/dist/d3-arrow.min.js"></script>
+        <script src="https://kit.fontawesome.com/98c45b8af7.js" crossorigin="anonymous"></script>
+    </body>
+</html>

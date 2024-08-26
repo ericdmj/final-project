@@ -1,0 +1,374 @@
+body {
+    background-image: url("../img/gears.jpg");
+    background-color: white;
+}
+
+.svg-container {
+    position: relative;
+    width: 100%; /* Ensure the container spans the width you expect */
+    height: 100%; /* Ensure the container spans the height you expect */
+}
+
+.map {
+    margin: 0px;
+    position: relative;
+    background-color: white;
+    border: 6px dashed gray;
+    border-radius: 15px;
+}
+
+
+
+
+.cls-16 {
+    fill: rgb(100,100,100);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
+.top-content {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+.menuelements {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    width: 250px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(100, 100, 100);
+    border: 2px solid rgb(96, 96, 96);
+    border-radius: 5px;
+}
+
+.menuelements h3 {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    line-height: 5px;
+}
+
+.menuelements #subtitle {
+    font-style:italic;
+    font-size: small;
+}
+
+.menuelements #instructions {
+    font-weight: bold;
+}
+
+
+.svgtest {
+    width: 220px;
+    z-index: 15;
+}
+
+
+.municipalities {
+    fill:rgb(223, 223, 223);
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.precincts {
+    fill: white;
+    stroke: white;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+}
+
+.precinctlabels {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    fill: #fff;
+    font-size: .55em;
+    opacity: .6;
+}
+
+.precinctlabels2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    fill: #666666;
+    font-size: .55em;
+    opacity: .6;
+}
+
+.chart {
+    
+    float: right;
+    margin: 7px 20px 0 0;
+}
+
+.chartTitle {
+    fill: rgb(100, 100, 100);
+    stroke:white;
+    stroke-width: .25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.chartBackground {
+    fill: rgb(223, 223, 223);
+}
+
+.chartFrame {
+    fill: none;
+    stroke: gray;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: gray;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    fill: gray;
+    paint-order: stroke;
+    stroke: white;
+    stroke-width: 3px;
+}
+
+.dropdownstyle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(100, 100, 100);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid rgb(96, 96, 96);
+}
+
+.dropdown {
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    z-index: 10;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #646464;
+    box-shadow: 2px 2px 4px #999;
+}
+
+#updateButton {
+    background-color: #dddddd;
+    border: 2px dotted #646464;
+    border-radius: 5px;
+    color: #646464;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+
+  #updateButton:hover {
+    background-color: #aaaaaa;
+    color: white;
+  }
+
+option {
+    font-weight: normal;
+}
+
+.infolabel {
+    margin: 0 20px 0 0;
+    position: absolute;
+    height: 90px;
+    min-width: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f4f0e7;
+    background-color: #646464;
+    border: solid thin #f4f0e7;
+    border-radius: 10px;
+    padding: 5px 10px;
+    top: -75px;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1.2em;
+    font-size: 24px;
+}
+
+.titleBox {
+    fill: #ccc;
+    fill-opacity: .7;
+    stroke: rgb(100, 100, 100);
+    stroke-dasharray: 5;
+    float: right;
+}
+
+.mapTitle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    fill: rgb(100, 100, 100);
+    stroke:white;
+    stroke-width: .25px;
+}
+
+.mapSubtitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    fill: rgb(100, 100, 100);
+    stroke:white;
+    stroke-width: .2px;
+}
+
+#legend {
+    z-index: 10;
+}
+
+.cls-3 {
+    fill:url(#linear-gradient-2);
+}
+
+.cls-7 {
+    fill:#bed7e7;
+}
+
+.cls-7,.cls-9,.cls-10,.cls-11 {
+    stroke:#808285;
+}
+
+.cls-8 {
+    fill:#ffffff;
+    opacity:.5;
+    stroke:#ffffff;
+}
+
+.cls-9 {
+    fill:#6badd6;
+}
+
+.cls-10 {
+    fill:#f68e67;
+}
+
+.cls-11 {
+    fill:#fdd8cb;
+}
+
+.cls-20 {
+    fill:url(#linear-gradient);
+}
+
+.toggle {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 80px;
+
+}
+
+.toggle2 {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 160px;
+
+}
+
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toptitle {
+    font-family:'Peralta','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.about {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.aboutbutton {
+    background-color: #dddddd;
+    border: 2px dotted #646464;
+    border-radius: 5px;
+    color: #646464;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+
+ .aboutbutton:hover {
+    background-color: #aaaaaa;
+    color: white;
+  }
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: #255242;
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+    background: #00d9ff;
+  }
+
+ #view {
+    font-size: small;
+    font-style: italic;
+  }
