@@ -1,20 +1,16 @@
-### Title: _Turnout By Election: A Virginia Story_
+### Title: _The Richmond Election Comparator_
 
 ### Author: Eric Johnson
 
 ### Code version:
 
-Last updated: August 5, 2024
+Last updated: August 26, 2024
 
 ### Description:
 
-My main question is this:
+The basic idea is that users can use it to dive into voting information and study voting patterns at a much more local level than is often the case with visual presentations of voting stats. Often those are aggregated by county or state, but I wanted to get more local, so I pulled together stats at the level of voting precinct. And I’m concentrating on my home town, Richmond, Virginia.
 
-I did Activity 10 as written, but because my data shows 133 municipalities instead of the 22 units shown in the France example, my bar graph is so narrow that it's not as good looking or potentially useful as it probably needs to be.  You can see my original Activity 10 version on [my Github](https://github.com/ericdmj/unit-3/) or even easier by going to my [Pages version](https://ericdmj.github.io/unit-3/).
+* [Final Project on my Github, which is where you are right now](https://github.com/ericdmj/final-project/)
+* [Final Project on Pages](https://ericdmj.github.io/final-project/)
 
-So I thought I might try it with a different layout.  Would something like the following work, with some additional formatting to make it even cleaner?
-
-* [Lab 2 on my Github, which is where you are right now](https://github.com/ericdmj/lab-2/)
-* [Lab 2 on Pages](https://ericdmj.github.io/lab-2/)
-
-All other thoughts are very welcome!
+All thoughts are very welcome!
